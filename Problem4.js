@@ -1,3 +1,5 @@
+// Find minimum and maximum number from given array.
+
 let arr1=[33,78,67,-9,-110,34]
 
 let max=-Infinity
