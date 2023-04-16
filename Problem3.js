@@ -1,32 +1,57 @@
 // Given an array of numbers find the average of all the even numbers.
 
-// First way to solve the problem
+// Solution - 1
 
-let arr = [5,3,6,4,2,7]
-// console.log(arr[1])
 let sum = 0;
-let arrLength = arr.length;
 
-function wayOne(){
-for(let i=0; i<arr.length;i++)
-{
-    sum = sum+arr[i]
+function wayOne(array){
+    let arrLength = array.length;
+    for(let i=0; i<array.length;i++)
+    {
+        sum = sum+array[i]
+    }
+    return sum/arrLength
 }
-console.log(sum/arrLength)
+console.log(wayOne([5,3,6,4,2,7]))
+
+
+// Solution - 2
+
+function secondWay(array1){
+    let arrLength1 = array1.length;
+    let sum = array1.reduce((acc,el)=>{
+        return acc+el
+    })
+      return sum/arrLength1
+    }
+
+console.log(secondWay([5,3,6,4,2,7]))
+
+//Solution - 3
+
+let sumOfNumber = 0;
+function thirdWay(array2){
+    let array2Length = array2.length;
+    let i = 0;
+    while(i < array2.length)
+    {
+        sumOfNumber = sumOfNumber + array2[i]
+        i++;
+    }
+     return sumOfNumber/array2Length
 }
-wayOne()
 
+console.log(thirdWay([5,3,6,4,2,7]))
 
-// second way to solve the problem
-let arr1 = [5,3,6,4,2,7]
-let arrLength1 = arr1.length;
+//Solution - 4
 
-function secondWay(){
-let sum = arr1.reduce((acc,el)=>{
-    return acc+el
-})
-
-console.log(sum/arrLength1)
+let sumOfArray = 0
+function fourthWay(listOfNumber){
+    let listOfNumberLength = listOfNumber.length;
+    listOfNumber.map((el)=>{
+        return sumOfArray = sumOfArray + el
+    })
+  return sumOfArray/listOfNumberLength
 }
 
-secondWay()
+console.log(fourthWay([5,3,6,4,2,7]))

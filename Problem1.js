@@ -1,6 +1,6 @@
 // Write a JavaScript to find the longest string from a given array of strings.
 
-// First way to solve the problem
+// Solution - 1
 
 let arr = ["aa","aaaa","a","aaaaaaa","aaa"]
 let max = ""
@@ -21,7 +21,7 @@ console.log(max)
 wayone()
 
 
-// Second Way to solve the problem
+// Solution - 2
 function secondWay(){
 arr.forEach((el)=>{
     if(el.length>max.length)
@@ -31,7 +31,6 @@ arr.forEach((el)=>{
 })
 console.log(max)
 }
-
 secondWay()
 
 
