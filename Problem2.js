@@ -1,5 +1,8 @@
+// Write a JavaScript program to change the capitalization of all letters in a given string.
+
+//Solution - 1
 let fname="Aaditi"
-    let fullname="Aaditi Harale"
+    // let fullname="Aaditi Harale"
 
     let u = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     let l = "abcdefghijklmnopqrstuvwxyz"
@@ -19,3 +22,12 @@ let fname="Aaditi"
         }
     }
     console.log(res);
+
+     //Solution - 2
+    // string convert into Uppercase using ES6
+
+    function lowerToUpper(name){
+        return name.toUpperCase()
+    }
+
+    console.log(lowerToUpper("shilpa"))
