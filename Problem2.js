@@ -1,4 +1,24 @@
 
+// Calculate average of given array :
+
+//Solved this Problem using callback function
+function sumOfIntegers(num){
+    let sum = 0;
+    for(let i=0; i<num.length; i++)
+    {
+        sum = sum + num[i]
+    }
+    return sum
+}
+function average(listOfNumbers,callback){
+    let sum = callback(listOfNumbers)
+    let result = sum/listOfNumbers.length
+    return result;
+}
+
+console.log(average([2,6,8,7,0,4],sumOfIntegers))
+
+
 // Write a JavaScript program that takes two integers and a divisor. If the given divisor divides both integers and it does not divide either, then two given integers are similar. Check whether two given integers are similar or not :
 
 function twoInteger(x,y,divisor){
@@ -110,6 +130,7 @@ console.log(twoInteger(2,5,2))
 let test = checkEqual([3,6,7])
 
 console.log(test)
+
 
 
 
