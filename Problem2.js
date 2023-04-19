@@ -1,4 +1,15 @@
 
+// Write a JavaScript program that takes two integers and a divisor. If the given divisor divides both integers and it does not divide either, then two given integers are similar. Check whether two given integers are similar or not :
+
+function twoInteger(x,y,divisor){
+    let a = x%divisor;
+    let b = y%divisor;
+    
+    if(a == b)
+    {
+        return true;
+
+
 //Write a JavaScript program to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 
 function twoRanges(a,b){
@@ -93,8 +104,12 @@ function checkEqual (arr){
     }
 }
 
+
+console.log(twoInteger(2,5,2))
+
 let test = checkEqual([3,6,7])
 
 console.log(test)
+
 
 
