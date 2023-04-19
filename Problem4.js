@@ -1,3 +1,4 @@
+
 // Find factors of given number and return a array :
 
 //Solution - 1
@@ -33,4 +34,25 @@ function listOfFactor(num){
 }
 
 console.log(listOfFactor(50))
+
+
+// Find minimum and maximum number from given array.
+
+let arr1=[33,78,67,-9,-110,34]
+
+let max= arr1[0]
+let min= arr1[0]
+for(let i=0; i<arr1.length;i++)
+{
+      if(arr1[i]>max)
+      {
+        max=arr1[i]
+      }
+      if(arr1[i]<min)
+      {
+        min=arr1[i]
+      }
+}
+console.log("Max no :- ",max)
+console.log("Min no:- ",min)
 
