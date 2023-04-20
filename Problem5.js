@@ -10,5 +10,9 @@ function checkCity(cityName){
         return '';
     }
 }
-console.log(checkCity("Lokop"))
+console.log(checkCity("Loskop"))
+
+//TestCase :
+
+console.log(checkCity("A"))
 
