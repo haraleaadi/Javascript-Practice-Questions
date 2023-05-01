@@ -11,7 +11,11 @@ function checkCity(cityName){
         return '';
     }
 }
-console.log(checkCity("Lokop"))
+console.log(checkCity("Loskop"))
+
+//TestCase :
+
+console.log(checkCity("A"))
 
 
 // Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3.
