@@ -2,13 +2,13 @@
 
 function counter(number,array){
 
-    let result = [2]
+    let result = [number]
    for(let i=1; i<array.length; i++)
    {
-        result.push(i+2)
+        result.push(number+i)
    }
    return result
 }
-console.log(counter(2,["a","a","a","a","a"]))
+console.log(counter(5,["a","a","a","a","a"]))
 
 
