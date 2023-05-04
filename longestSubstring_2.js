@@ -34,5 +34,6 @@ function longestSubstring(string){
     return result;
 }
 
-console.log(longestSubstring("pwwkew"))
+console.log(longestSubstring("pwwkewghjsghs"))
+// kewghjs
 
